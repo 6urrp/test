@@ -1,0 +1,954 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+.main-container {
+  padding: 0;
+  margin: 0;
+  background-color: #232529;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
+
+/************ HEADER ***************/
+header {
+  width: 100%;
+  background-color: #252931; }
+  header .header-flex-container {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    header .header-flex-container .logo-container {
+      padding-top: 20px;
+      padding-bottom: 28px; }
+    header .header-flex-container .close-button {
+      display: none; }
+    header .header-flex-container nav {
+      color: white;
+      display: flex; }
+      header .header-flex-container nav ul {
+        font-size: 16px;
+        list-style: none;
+        font-weight: lighter; }
+        header .header-flex-container nav ul li {
+          display: inline-block;
+          padding-top: 24px;
+          padding-right: 23px; }
+          header .header-flex-container nav ul li a {
+            text-decoration: none;
+            color: white; }
+            header .header-flex-container nav ul li a:hover {
+              color: rgba(202, 202, 202, 0.473); }
+      header .header-flex-container nav .navigation-item {
+        margin-right: 32px; }
+    header .header-flex-container .language-item {
+      cursor: pointer; }
+
+/*********** WELCOME SECTION *************/
+.welcome-container {
+  background-image: url(/assets/img/football-woman.png);
+  background-repeat: no-repeat;
+  background-position-x: -50px; }
+  .welcome-container .welcome-news-container {
+    width: 49%;
+    margin-left: 79px; }
+    .welcome-container .welcome-news-container .welcome-news {
+      font-weight: 300;
+      font-size: 16px;
+      margin: 0;
+      padding: 19px 20px 19px 29px;
+      background-color: #00a6ca;
+      color: white; }
+      .welcome-container .welcome-news-container .welcome-news #cancel {
+        cursor: pointer; }
+  .welcome-container .welcome-text {
+    width: 30%;
+    margin-left: 345px;
+    margin-top: 252px;
+    color: white;
+    font-weight: light; }
+    .welcome-container .welcome-text h1 {
+      font-weight: lighter;
+      font-size: 60px;
+      margin: 0; }
+    .welcome-container .welcome-text p {
+      margin-top: 43px;
+      margin-bottom: 0;
+      font-weight: lighter; }
+    .welcome-container .welcome-text .tell-me-more {
+      position: relative;
+      z-index: 10;
+      font-weight: normal;
+      display: inline-block;
+      margin-top: 10px;
+      padding: 20px 40px;
+      background-color: #01bbff;
+      text-decoration: none;
+      color: white; }
+      .welcome-container .welcome-text .tell-me-more:hover {
+        cursor: pointer;
+        background-color: #01bbffcb; }
+
+.cube-holder {
+  position: relative; }
+
+.welcome-cube {
+  z-index: 10;
+  background-color: #23262b;
+  width: 192px;
+  height: 192px;
+  position: absolute;
+  right: -96px;
+  top: 80px;
+  transform: rotate(45deg); }
+  .welcome-cube .welcome-blue {
+    background-color: #00a6ca;
+    width: 37.5px;
+    height: 37.5px;
+    position: relative;
+    bottom: -87%;
+    left: 34%; }
+
+/****** TRAIN SECTION *********/
+.train-section {
+  position: relative;
+  margin-top: 360px;
+  text-align: center;
+  color: white;
+  width: 100%; }
+  .train-section .star-background {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -670px;
+    z-index: 1; }
+  .train-section .train-container .train-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-weight: lighter; }
+    .train-section .train-container .train-title span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #30e7ff;
+      margin-left: 3px; }
+  .train-section .train-container p {
+    width: 34%;
+    text-align: center;
+    margin: 0 auto; }
+  .train-section .sport-container {
+    width: 55.6%;
+    height: 235px;
+    margin-left: 24%;
+    margin-top: 95px;
+    display: flex;
+    flex-wrap: wrap; }
+    .train-section .sport-container article {
+      width: 209px;
+      height: 110px;
+      border-right: 1px solid rgba(128, 128, 128, 0.568); }
+      .train-section .sport-container article:nth-child(5), .train-section .sport-container article:nth-child(10) {
+        border: none; }
+      .train-section .sport-container article:nth-child(n+6) {
+        border-top: 1px solid rgba(128, 128, 128, 0.568);
+        padding-top: 15px; }
+        .train-section .sport-container article:nth-child(n+6) img {
+          padding-top: 24px; }
+        .train-section .sport-container article:nth-child(n+6) p {
+          margin: 0; }
+      .train-section .sport-container article p {
+        position: relative;
+        z-index: 1; }
+        .train-section .sport-container article p:hover {
+          color: #d1cbcb;
+          cursor: pointer; }
+
+.white-cube {
+  background-color: white;
+  height: 321px;
+  width: 321px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -160.5px;
+  box-shadow: 0px 0px 195px 15px rgba(53, 198, 223, 0.418); }
+  .white-cube .blue-cube {
+    background-color: #2bc1da;
+    width: 69px;
+    height: 69px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -39px;
+    bottom: 91px; }
+
+/************* SERVICES *************/
+.services-container-background {
+  width: 100%;
+  background-image: url(/assets/img/services/star-background.png);
+  background-position-y: -150px; }
+
+.services-section {
+  margin-top: 310px;
+  margin-left: 15.7%;
+  color: white; }
+  .services-section h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 55px;
+    padding-left: 32px; }
+  .services-section .services-handball-container {
+    position: relative; }
+    .services-section .services-handball-container img {
+      position: absolute;
+      right: -200px;
+      top: -280px; }
+  .services-section .services-wrap-container {
+    width: 91.5%;
+    display: flex;
+    flex-wrap: wrap; }
+    .services-section .services-wrap-container article {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #242529;
+      width: 316px;
+      height: 250px;
+      margin-right: 50px;
+      margin-bottom: 42px; }
+      .services-section .services-wrap-container article h5, .services-section .services-wrap-container article p {
+        margin-top: 0;
+        margin-bottom: 13px;
+        padding-left: 32px;
+        padding-right: 25px;
+        font-size: 20px;
+        font-weight: normal;
+        vertical-align: middle; }
+      .services-section .services-wrap-container article p {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 20px; }
+    .services-section .services-wrap-container article:nth-child(4) {
+      margin-right: 0; }
+  .services-section .services-button-container {
+    margin: 20px auto 0;
+    margin-top: 8px;
+    text-align: center; }
+    .services-section .services-button-container .services-button {
+      background-color: #232529;
+      color: white;
+      border: 1px solid white;
+      margin-right: 150px;
+      padding: 20px 68px;
+      font-family: "Roboto", "sans-serif";
+      font-size: medium; }
+      .services-section .services-button-container .services-button:hover {
+        cursor: pointer;
+        background-color: rgba(46, 48, 53, 0.884); }
+
+/********* QUOTE SECTION **********/
+.quote-container {
+  position: relative;
+  z-index: 10;
+  margin-top: 218px;
+  background-color: #2bc1da;
+  color: white;
+  text-align: center;
+  width: 60%;
+  margin-left: 22%; }
+  .quote-container p {
+    margin: 0;
+    font-size: 28px;
+    font-style: italic;
+    padding: 48px 80px 48px 96px; }
+
+.cup-container {
+  position: relative;
+  width: 100%; }
+  .cup-container img {
+    position: absolute;
+    top: -515px;
+    left: -283px; }
+
+/************* REFERENCES ***************/
+.reference-stars {
+  position: relative; }
+  .reference-stars img {
+    width: 100%;
+    position: absolute;
+    top: -290px; }
+
+.reference-section {
+  width: 100%;
+  margin-top: 286px;
+  margin-bottom: 190px;
+  margin-left: 12.3%;
+  color: white; }
+  .reference-section .ref {
+    display: flex; }
+    .reference-section .ref .ref-rect img {
+      position: relative;
+      top: 80px; }
+    .reference-section .ref .up-container {
+      margin-left: 98px;
+      margin-right: 30px; }
+      .reference-section .ref .up-container img {
+        position: relative;
+        top: 50px; }
+    .reference-section .ref .reference-text-container {
+      z-index: 10;
+      width: 32%; }
+      .reference-section .ref .reference-text-container h2 {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 40px;
+        margin-bottom: 42px; }
+      .reference-section .ref .reference-text-container p {
+        margin-top: 0;
+        font-family: "Lato", "sans-serif";
+        font-style: italic;
+        color: #c5c8d1;
+        line-height: 170%; }
+        .reference-section .ref .reference-text-container p .name, .reference-section .ref .reference-text-container p .place {
+          padding-left: 5px;
+          font-family: "Roboto", "sans-serif";
+          font-style: normal;
+          color: white;
+          font-size: 20px; }
+        .reference-section .ref .reference-text-container p .place {
+          padding-left: 12px;
+          font-size: 16px;
+          font-weight: lighter;
+          color: #c5c8d1; }
+      .reference-section .ref .reference-text-container button {
+        border: 1px solid white;
+        background-color: #232529;
+        color: white;
+        margin-top: 50px;
+        margin-right: 50px;
+        padding: 20px 68px;
+        font-family: "Roboto", sans-serif;
+        font-size: medium; }
+        .reference-section .ref .reference-text-container button:hover {
+          cursor: pointer;
+          background-color: rgba(46, 48, 53, 0.884); }
+    .reference-section .ref .down-container .down {
+      position: relative;
+      bottom: -300px; }
+    .reference-section .ref .reference-section-white {
+      display: inline-block;
+      width: 578px;
+      height: 578px;
+      background-color: white;
+      transform: rotate(45deg);
+      position: relative;
+      right: -560px;
+      bottom: 80px;
+      z-index: 10;
+      box-shadow: 64px 33px 800px 32px rgba(0, 255, 255, 0.479); }
+      .reference-section .ref .reference-section-white .reference-img-container {
+        position: relative;
+        top: 460px;
+        left: -345px;
+        display: inline-block;
+        width: 321px;
+        height: 321px;
+        overflow: hidden;
+        margin-left: 126px;
+        margin-bottom: 7%; }
+        .reference-section .ref .reference-section-white .reference-img-container img {
+          position: relative;
+          top: -128px;
+          right: 124px;
+          transform: rotate(-45deg); }
+      .reference-section .ref .reference-section-white .blue {
+        width: 78px;
+        height: 78px;
+        background-color: #25c1d8;
+        position: relative;
+        bottom: 30%;
+        right: 7%; }
+    .reference-section .ref .triangle-container img {
+      position: relative;
+      left: 0; }
+
+/************** ABOUT SECTION ****************/
+.about-stars-container {
+  position: relative; }
+  .about-stars-container img {
+    width: 100%;
+    position: absolute;
+    top: -700px; }
+
+.about-section {
+  width: 100%; }
+  .about-section .about-section-blue {
+    display: inline-block;
+    width: 565px;
+    height: 565px;
+    background-color: rgba(43, 192, 218, 0.877);
+    transform: rotate(45deg);
+    position: relative;
+    left: -290px;
+    bottom: 200px;
+    box-shadow: -55px 0px 800px -30px rgba(126, 150, 231, 0.377); }
+    .about-section .about-section-blue .about-img-container {
+      display: inline-block;
+      width: 321px;
+      height: 321px;
+      overflow: hidden;
+      position: relative;
+      top: -150px;
+      right: -400px; }
+      .about-section .about-section-blue .about-img-container img {
+        position: relative;
+        top: -99px;
+        right: 86px;
+        transform: rotate(-45deg); }
+    .about-section .about-section-blue .white {
+      width: 78px;
+      height: 78px;
+      background-color: white;
+      position: relative;
+      left: 93%;
+      bottom: 6%; }
+  .about-section .about-me-container {
+    color: white;
+    margin-left: 100px;
+    display: inline-block;
+    width: 34%; }
+    .about-section .about-me-container h2 {
+      font-weight: lighter;
+      font-size: 40px;
+      margin-bottom: 42px; }
+    .about-section .about-me-container p {
+      font-family: "Lato";
+      line-height: 160%;
+      color: #c5c8d1;
+      margin-bottom: 50px; }
+    .about-section .about-me-container button {
+      margin-bottom: 25px;
+      width: 190px;
+      height: 56px;
+      font-family: "Roboto", serif;
+      font-size: 16px;
+      background-color: inherit;
+      border: 1px solid white;
+      color: white; }
+      .about-section .about-me-container button:hover {
+        cursor: pointer;
+        background-color: rgba(46, 48, 53, 0.884); }
+
+/**************** BLOG ******************/
+.blog-section {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+  .blog-section h2 {
+    margin-bottom: 110px;
+    font-family: "Roboto", "sans-serif";
+    font-weight: lighter;
+    font-size: 40px;
+    color: white; }
+    .blog-section h2 span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #30e7ff;
+      margin-left: 3px; }
+  .blog-section .blog-flex-container {
+    margin: 0 auto;
+    width: 61.5%;
+    display: flex;
+    justify-content: space-between; }
+    .blog-section .blog-flex-container article {
+      width: 48%; }
+      .blog-section .blog-flex-container article p {
+        font-family: Lato, sans-serif;
+        font-size: 18px;
+        text-align: left; }
+        .blog-section .blog-flex-container article p span {
+          font-size: 14px;
+          padding-bottom: 5px;
+          display: block;
+          text-align: left; }
+    .blog-section .blog-flex-container .zero-blog {
+      box-shadow: inset 0 -11em 3em -2em rgba(38, 177, 205, 0.849);
+      position: relative;
+      height: 520px;
+      background-image: url(/assets/img/blog/blog-1.jpg);
+      background-position-x: -60px;
+      background-repeat: no-repeat; }
+      .blog-section .blog-flex-container .zero-blog .blogpost {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        color: white; }
+    .blog-section .blog-flex-container div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 49%; }
+      .blog-section .blog-flex-container div p {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        color: white; }
+      .blog-section .blog-flex-container div .first-blog {
+        box-shadow: inset 0 -8em 3em -2em rgba(38, 177, 205, 0.849);
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        background-image: url(/assets/img/blog/blog-2.jpg);
+        background-repeat: no-repeat; }
+      .blog-section .blog-flex-container div .second-blog, .blog-section .blog-flex-container div .third-blog {
+        box-shadow: inset 0 -6em 3em -2em rgba(38, 177, 205, 0.849);
+        position: relative;
+        width: 48%;
+        background-image: url(/assets/img/blog/blog-3.jpg);
+        background-repeat: no-repeat; }
+      .blog-section .blog-flex-container div .third-blog {
+        background-image: url(/assets/img/blog/blog-4.jpg);
+        background-repeat: no-repeat; }
+
+.blog-background {
+  background-image: url(/assets/img/blog/background.png);
+  background-position-y: center;
+  background-repeat: no-repeat; }
+
+/************* CONTACT ***************/
+.contact-img {
+  position: relative; }
+  .contact-img img {
+    position: absolute;
+    right: -300px;
+    top: -50px; }
+
+.contact-section {
+  text-align: center;
+  margin-top: 280px;
+  margin-bottom: 340px; }
+  .contact-section h2 {
+    margin-top: 0;
+    font-family: "Roboto", "sans-serif";
+    font-size: 40px;
+    font-weight: lighter;
+    color: white; }
+  .contact-section button {
+    width: 11.7%;
+    background-color: #00a6c9;
+    color: white;
+    border: none;
+    padding: 20px 70px; }
+    .contact-section button:hover {
+      cursor: pointer;
+      background-color: #3bc8e4; }
+
+/**********FOOTER*************/
+footer {
+  width: 86%;
+  margin: 0 auto; }
+  footer .footer-flex {
+    display: flex;
+    justify-content: space-between; }
+    footer .footer-flex .footer-nav {
+      color: white;
+      display: flex;
+      margin-bottom: 32px; }
+      footer .footer-flex .footer-nav ul {
+        margin: 0;
+        font-size: 16px;
+        font-weight: lighter;
+        list-style: none; }
+        footer .footer-flex .footer-nav ul li {
+          position: relative;
+          z-index: 10;
+          display: inline-block;
+          padding-top: 24px;
+          padding-right: 23px; }
+          footer .footer-flex .footer-nav ul li a {
+            text-decoration: none;
+            color: white; }
+            footer .footer-flex .footer-nav ul li a:hover {
+              color: rgba(202, 202, 202, 0.473); }
+      footer .footer-flex .footer-nav .social-network {
+        margin-right: 25px; }
+        footer .footer-flex .footer-nav .social-network li {
+          cursor: pointer;
+          padding: 0;
+          margin: 9px 3px 0 3px; }
+          footer .footer-flex .footer-nav .social-network li:hover {
+            background-color: rgba(71, 71, 73, 0.774); }
+        footer .footer-flex .footer-nav .social-network .fab {
+          border: 1px solid white;
+          padding: 7px;
+          font-size: 25px; }
+        footer .footer-flex .footer-nav .social-network .fa-facebook-f {
+          padding: 7px 12px; }
+  footer .small-footer {
+    font-family: "Roboto", "sans-serif";
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.808);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px; }
+    footer .small-footer p {
+      margin: 0; }
+      footer .small-footer p a {
+        text-decoration: none;
+        color: gray; }
+
+.border {
+  border: 1px solid gray;
+  margin-bottom: 40px; }
+
+.footer-img-container {
+  position: relative;
+  width: 100%; }
+  .footer-img-container img {
+    height: 260px;
+    position: absolute;
+    bottom: 0px;
+    right: 40%; }
+
+/*****line**********/
+.container {
+  padding: 0; }
+
+.lines {
+  width: 100%;
+  height: 21px;
+  position: relative;
+  margin: 0 auto; }
+
+.lines::after, .lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: #c9c8c8;
+  width: 41%;
+  top: 56%; }
+
+.lines::after {
+  left: 0; }
+
+.lines::before {
+  right: 0; }
+
+/**********************************************
+           media queries
+**********************************************/
+@media screen and (max-width: 1888px) {
+  .sport-container {
+    justify-content: center; }
+
+  .train-section #items .sport-item {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-top: 16px; }
+  .train-section #items #fifth {
+    padding-top: 16px; }
+
+  /*************SERVICES*****************/
+  .services-section .services-wrap-container {
+    justify-content: start; }
+    .services-section .services-wrap-container article {
+      width: 340px; }
+    .services-section .services-wrap-container #forth-services {
+      margin-right: 50px; }
+
+  /***********references***********/
+  .reference-section .ref .down-container .down {
+    bottom: -350px; }
+
+  /*******footer*********/
+  .footer-img-container {
+    display: none; } }
+@media screen and (max-width: 1516px) {
+  header .header-flex-container {
+    width: 95%; }
+    header .header-flex-container .language-list {
+      padding: 0; }
+
+  .welcome-container {
+    background-position-x: center; }
+
+  /****train*****/
+  .train-section .sport-container {
+    height: fit-content; }
+
+  /****services*****/
+  .white-cube {
+    left: -210px; }
+
+  .services-section {
+    margin-top: 200px; }
+
+  .services-section .services-handball-container img {
+    right: -350px; }
+
+  .services-section .services-wrap-container {
+    margin: 0 auto; }
+
+  .services-section .services-button-container .services-button {
+    margin-right: 250px; }
+
+  .services-container-background {
+    background-repeat: no-repeat; }
+
+  /*****references*****/
+  .reference-section .ref .reference-section-white {
+    right: -35%; }
+
+  .reference-section .ref .down-container .down {
+    bottom: -400px; }
+
+  /*****about*******/
+  .about-section .about-section-blue {
+    left: -400px; }
+
+  /******contact*****/
+  .contact-section button {
+    width: fit-content; } }
+@media screen and (max-width: 1259px) {
+  /*****services*******/
+  .services-section .services-handball-container img {
+    right: -510px; }
+
+  .white-cube {
+    left: -240px; }
+
+  /********references**********/
+  .reference-section .ref .reference-section-white {
+    right: -45%; }
+
+  .reference-section .ref .down-container .down {
+    bottom: -450px; }
+
+  /*********aboutme*******/
+  .about-section .about-section-blue {
+    left: -452px; }
+
+  .about-section .about-me-container {
+    margin-left: 0; }
+
+  /*******footer******/
+  footer .footer-flex {
+    flex-wrap: wrap;
+    justify-content: center; }
+    footer .footer-flex .logo-container {
+      width: 100%;
+      text-align: center; }
+    footer .footer-flex .footer-nav {
+      text-align: center;
+      flex-wrap: wrap; }
+      footer .footer-flex .footer-nav .navigation-list {
+        width: 100%;
+        margin: 0 auto; }
+      footer .footer-flex .footer-nav .social-network {
+        margin: 30px auto; } }
+@media screen and (max-width: 1096px) {
+  /*****header******/
+  header .header-flex-container {
+    flex-wrap: wrap;
+    justify-content: center; }
+    header .header-flex-container .logo-container {
+      width: 100%;
+      text-align: center; }
+    header .header-flex-container nav {
+      flex-wrap: wrap;
+      justify-content: center; }
+      header .header-flex-container nav ul {
+        text-align: center; }
+      header .header-flex-container nav .navigation-list {
+        width: 100%; }
+
+  /******welcome*****/
+  .welcome-container .welcome-news-container {
+    width: 80%; }
+
+  .welcome-container .welcome-text {
+    margin: 20% auto 0; }
+
+  /****sport****/
+  .train-section .train-container p {
+    width: 80%; }
+
+  /*******services*******/
+  #services {
+    margin-left: 0; }
+
+  .white-cube {
+    left: -319px; }
+
+  .services-section h2 {
+    text-align: center;
+    font-size: 35px; }
+
+  .services-section .services-handball-container img {
+    right: -580px; }
+
+  .services-section .services-wrap-container {
+    width: 100%;
+    justify-content: center; }
+
+  .services-section .services-wrap-container article {
+    width: 60%; }
+
+  .services-section .services-button-container .services-button {
+    margin-right: 0; }
+
+  /*****quote********/
+  .quote-container {
+    margin-left: auto;
+    margin-right: auto; }
+
+  /*****references*****/
+  .reference-section .ref {
+    flex-wrap: wrap; }
+
+  .reference-section .ref .reference-section-white {
+    right: -78%; }
+
+  /*****about****/
+  #about {
+    margin-bottom: 150px; }
+
+  .about-section .about-section-blue {
+    bottom: 640px;
+    left: -39%; }
+
+  .about-section .about-me-container {
+    position: relative;
+    left: -148px; }
+
+  /*******blog***********/
+  .blog-section .blog-flex-container {
+    flex-wrap: wrap; }
+    .blog-section .blog-flex-container .zero-blog {
+      width: 100%;
+      margin-bottom: 20px; }
+    .blog-section .blog-flex-container div {
+      width: 100%; }
+      .blog-section .blog-flex-container div .first-blog {
+        height: 250px;
+        background-size: cover; }
+      .blog-section .blog-flex-container div .second-blog, .blog-section .blog-flex-container div .third-blog {
+        height: 250px; }
+      .blog-section .blog-flex-container div .third-blog {
+        height: 250px; } }
+@media screen and (max-width: 919px) {
+  /**********welcome**********/
+  .welcome-container .welcome-text {
+    width: 60%; }
+
+  /******references*******/
+  .reference-section {
+    margin-left: 0; }
+
+  .reference-section .ref .ref-rect img {
+    display: none; }
+
+  .reference-section .ref .up-container {
+    margin-right: 10px; }
+
+  .reference-section .ref .reference-text-container {
+    width: 65%; }
+
+  .reference-section .ref .down-container .down {
+    bottom: -370px; }
+
+  .reference-section .ref .reference-section-white {
+    right: -114%;
+    bottom: 163px; }
+
+  /********about*********/
+  #about {
+    margin-bottom: 0;
+    height: 600px; }
+
+  .about-section .about-section-blue {
+    left: -600px; }
+
+  .about-section .about-me-container {
+    left: 100px;
+    bottom: 700px;
+    width: 62%; } }
+@media screen and (max-width: 681px) {
+  #close-me {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.404); }
+
+  header .header-flex-container nav {
+    display: none; }
+
+  header .header-flex-container .open {
+    display: block; }
+    header .header-flex-container .open ul {
+      padding: 0; }
+
+  .welcome-cube {
+    display: none; }
+
+  /******sport*********/
+  .train-section .sport-container article {
+    width: 80%;
+    margin-bottom: 20px; }
+
+  .train-section #items .sport-item {
+    border: none; }
+
+  /****services*****/
+  .services-section .services-wrap-container article {
+    margin: 10px 0;
+    text-align: center; }
+
+  .services-section .services-wrap-container #forth-services {
+    margin-right: 0; }
+
+  /******quote*******/
+  .quote-container p {
+    padding: 20px 30px; }
+
+  /*****references*****/
+  .reference-section .ref .up-container {
+    margin-left: 50px; }
+
+  .reference-section .ref .down-container .down {
+    bottom: -482px; }
+
+  .reference-section .ref .reference-section-white {
+    display: none; }
+
+  /***about****/
+  .about-section .about-section-blue {
+    display: none; }
+
+  .about-section .about-me-container {
+    bottom: 0;
+    text-align: right; }
+
+  /******blog********/
+  .blog-section .blog-flex-container div .third-blog, .blog-section .blog-flex-container div .second-blog, .blog-section .blog-flex-container div .third-blog {
+    margin-bottom: 20px;
+    width: 100%;
+    background-size: cover; }
+
+  /*****footer*****/
+  footer .small-footer {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .container .lines::after, .lines::before {
+    width: 60%; } }
+
+/*# sourceMappingURL=style.css.map */
