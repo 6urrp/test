@@ -1142,10 +1142,13 @@ footer {
 
     #about {
         margin-bottom: 0;
-        height: 600px;
+        height: fit-content;
+        h2 {
+            font-style: 30px;
+        }
     }
     .about-section .about-section-blue {
-        left: -600px
+        left: -600px;
     }
     .about-section .about-me-container {
         left: 100px;
@@ -1177,6 +1180,12 @@ footer {
     .welcome-cube {
         display: none;
     }
+    .welcome-container .welcome-news-container {
+        margin: 0;
+        p {
+            width: 100%;
+        }
+    }
 
     /******sport*********/
     .train-section .sport-container article {
@@ -1192,11 +1201,13 @@ footer {
     /****services*****/ 
     .services-section .services-wrap-container article {
         margin: 10px 0;
+        height: fit-content;
         text-align: center;
     }
     .services-section .services-wrap-container #forth-services {
         margin-right: 0;
     }
+    
 
     /******quote*******/
 
@@ -1205,6 +1216,12 @@ footer {
     }
 
     /*****references*****/ 
+    .reference-section .ref .reference-text-container {
+        margin-left: 58px;
+    }
+    .reference-section .ref .up-container, .down-container {
+        display: none;
+    }
     .reference-section .ref .up-container {
         margin-left: 50px;
     }
